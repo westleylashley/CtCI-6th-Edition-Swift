@@ -17,7 +17,7 @@ public extension BinaryInteger where Stride: SignedInteger {
         let zero: Self = 0
         return zero.advanced(by: Int(result))
     }
-    
+
     var asStride: Stride {
         return -(distance(to: 0))
     }
@@ -29,5 +29,4 @@ public extension BinaryInteger {
         return self % 2 == 0
     }
 }
-
 
